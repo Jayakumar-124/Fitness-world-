@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness World</title>
+  <link rel="Website icon" type="png"
+  href="Pics/logo1.png">
+</head>
+<style>
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.Main1{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  filter: blur(5PX);
+  filter: brightness(20px);
+}
+#Main{
+  width: 100%;
+  height: 100%;
+  
+}
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+.login-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  max-width: 300px;
+  width: 100%;
+  top: 175px;
+  left: 610px;
+}
+
+.login-card h2 {
+  margin-bottom: 25px;
+  color: blueviolet;
+}
+.login-card input[type="text"],
+.login-card input[type="number"],
+.login-card input[type="email"]
+{
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  background: #f8d0d9;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #444;
+  border: none;
+  border-radius: 20px;
+}
+
+.login-card button {
+  background-color: #2b588c;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+</style>
+<body>
+  <div class="Main1">
+    <img src="Pics/005.jpg" id="Main">
+  </div>
+  <div class="background">
+    <div class="login-card">
+      <h2>Join Fitness World</h2>
+      <form action="register.py" method="post">
+      <input type="text" placeholder="Name">
+      <input type="number" placeholder="Mobile.No">
+      <input type="email" placeholder="E-mail">
+    </form>
+      <div class="options">
+      </div>
+      <button>Join Now</button>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

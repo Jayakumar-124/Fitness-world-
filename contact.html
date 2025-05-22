@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness World</title>
+    <link rel="Website icon" type="png"
+    href="Pics/logo1.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+      nav{
+        float: right;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px; 
+      }
+       a{
+        position: relative;
+        cursor: pointer;
+        color: black;
+        font-size: x-large;
+        transition: color 0.25s;
+       }
+       a::after{
+        position: absolute;
+        content: "";
+        inset: 0;
+        background-color: orange;
+        scale: 1 0;
+        z-index: -1;
+        transition: 0.45s;
+        border-radius: 55px;
+       }
+       a:hover{
+        scale: 1.2;
+       }
+       a:hover::after{
+        scale: 1.1 1.3;
+       }
+      header{
+        width: 20ch;
+        font-size: 50px;
+        font-family: merriweather;
+        text-wrap: nowrap;
+        overflow: hidden;
+        animation: typing 3s steps(300)  ;
+        background: linear-gradient(45deg,
+        #fd0000, rgb(255, 0, 255),
+        aqua
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        grid-column: 1/-1;
+      }
+      @keyframes typing{
+        from{
+          width: 0ch;
+        }
+      }
+      #insta1{
+        width: 50px;
+        height: 50px;
+      }
+      #mobile1{
+        width: 50px;
+        height: 50px;
+      }
+      #location1{
+        width: 50px;
+        height: 50px;
+      }
+      #mail1{
+        width: 50px;
+        height: 50px;
+      }
+      #whatsapp1{
+        width: 50px;
+        height: 50px;
+      }
+      #face1{
+        width: 60px;
+        height: 60px;
+      }
+      .logos{
+       margin: 0px;
+       padding: 80px;
+      }
+      .text{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <header>Fitness World</header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="packages.html">Packages</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="Form.html">Join Now</a>
+    </nav>
+    <div class="logos">
+    <div class="insta">
+      <img src="Pics/ig.png" id="insta1">
+      <div class="text">
+      <h3>_Fitness_Wolrd_</h3>
+    </div>
+    </div>
+    <div class="mobile">
+      <img src="Pics/mobile.png" id="mobile1">
+      <div class="text">
+        <h2>9042080932</h2>
+      </div>
+    </div>
+    <div class="location">
+      <img src="Pics/location.png" id="location1">
+      <div class="text">
+        <h2>M5CQ+QF2 Fitness World Gym, <br>
+          Vaikal Patrai, Chinna Thirupathi,<br>
+           Salem, Tamil Nadu 636014</h2>
+      </div>
+    </div>
+    <div class="mail">
+       <img src="Pics/mail.jpg" id="mail1">
+       <div class="text">
+        <h2>Fitnesswolrd@gmail.com</h2>
+       </div>
+    </div>
+    <div class="whatsapp">
+      <img src="Pics/wa.png" id="whatsapp1">
+      <div class="text">
+        <h2>9042080932</h2>
+      </div>
+    </div>
+    <div class="face">
+      <img src="Pics/fb.png" id="face1">
+      <div class="text">
+        <h2>Fitnesswolrd.gym</h2>
+      </div>
+    </div>
+  </div>
+  
+  </body>
+</html>
